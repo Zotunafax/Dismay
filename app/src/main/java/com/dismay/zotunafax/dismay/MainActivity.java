@@ -13,10 +13,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Typeface custom_font;
-        TextView header = (TextView) findViewById(R.id.header);
-
         custom_font = Typeface.createFromAsset(getAssets(), "fonts/font.ttf");
 
-        header.setTypeface(custom_font);
+        TextView main_textView_header = (TextView) findViewById(R.id.main_textView_header);
+
+        main_textView_header.setTypeface(custom_font);
     }
 }
